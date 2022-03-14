@@ -34,7 +34,7 @@ jobs:
             cat ./result.txt >> $GITHUB_ENV
             echo 'EOF' >> $GITHUB_ENV
       - name: 'Send mail'
-        uses: dawidd6/action-send-mail@master
+        uses: myvps865/action-send-mail@master
         with:
           server_address: smtp-mail.outlook.com
           server_port: 587
