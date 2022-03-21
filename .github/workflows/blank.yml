@@ -46,13 +46,4 @@ jobs:
           from: GitHub Actions
           content_type: text/html
           
-      - name: 'tt!'
-        run: |
-          git config --local user.email "vps865@hotmail.com"
-          git config --local user.name "myvps865"
-          #git remote set-url origin https://${{ github.actor }}:${{ secrets.MYGG_TOKEN }}@github.com/${{ github.repository }}
-          git pull 
-          cp -Rf result.txt logs/${{env.TODAY_DATE}}.txt
-          git add .
-          git commit -m "Update By Github Action Bot"
-          git push
+
